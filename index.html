@@ -10,7 +10,8 @@
   <script src="https://kit.fontawesome.com/89cee7f055.js" crossorigin="anonymous"></script>
 
   <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- Google Font Section CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,7 @@
 
 </head>
 
-<body class="manrope max-w-screen-xl mx-auto p-12 md:px-20 lg:28">
+<body class="manrope">
 
 <!-- Header Section -->
     <header>
@@ -36,7 +37,7 @@
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main class="w-11/12 mx-auto p-10 md:px-20 lg:28">
 
       <!-- Banner Section -->
       <section class="pt-10 mb-20">
@@ -61,11 +62,11 @@
           </div>
 
           <!-- Banner Image Content-->
-          <div class="relative">
-            <img class="w-[600px]" src="./assets/banner.png" alt="Banner Image">
+          <div class="relative ml-1">
+            <img class="w-[600px]" src="./images/banner.png" alt="Banner Image">
 
              <!-- Rating Card Container-->
-            <div class="w-[250px] flex justify-center items-center gap-2 rounded-lg bg-white px-2 py-2 shadow absolute bottom-2 left-10 sm:bottom-4 sm:left-16 md:bottom-5 md:left-20 lg:left-6 xl:bottom-8 xl:left-20">
+            <div class="w-[200px] flex justify-center items-center gap-2 rounded-lg bg-white md:px-2 py-2 shadow absolute bottom-3 left-10 md:bottom-8 md:left-36 lg:left-36">
 
               <!--Rating Star Icon -->
               <div>
@@ -103,7 +104,7 @@
 
               <!-- Image Content -->
               <div class="flex justify-center items-center">
-                <img class="w-[108px] h-[169px]" src="./assets/tea-1.png" alt="Milk Tea">
+                <img class="w-[108px] h-[169px]" src="./images/tea-1.png" alt="Milk Tea">
               </div>
               <br>
               <!-- Text Content -->
@@ -119,7 +120,7 @@
 
               <!-- Image Content -->
               <div class="flex justify-center items-center">
-                <img class="w-[108px] h-[169px]" src="./assets/tea-2.png" alt="Black Tea">
+                <img class="w-[108px] h-[169px]" src="./images/tea-2.png" alt="Black Tea">
               </div>
               <br>
               <!-- Text Content -->
@@ -135,7 +136,7 @@
 
               <!-- Image Content -->
               <div class="flex justify-center items-center">
-                <img class="-[108px] h-[169px]" src="./assets/tea-3.png" alt="Lemon Tea">
+                <img class="-[108px] h-[169px]" src="./images/tea-3.png" alt="Lemon Tea">
               </div>
               <br>
               <!-- Text Content -->
@@ -151,7 +152,7 @@
 
               <!-- Image Content -->
               <div class="flex justify-center items-center">
-                <img class="w-[108px] h-[169px]" src="./assets/tea-4.png" alt="Green Tea">
+                <img class="w-[108px] h-[169px]" src="./images/tea-4.png" alt="Green Tea">
               </div>
               <br>
               <!-- Text Content -->
@@ -166,11 +167,74 @@
 
       </section>
 
+      <!-- Tea Quality Section -->
+      <section class="lg:flex justify-center items-center gap-9 mb-20">
+
+        <div class="grid grid-cols-2 grid-rows-3 gap-2 md:gap-5 mb-5 lg:mb-0">
+          <div class="bg-gradient-to-r from-[#FF0000] to-[#FF8938] rounded-xl"></div>
+          <div class="p-6 bg-[#e6a623] bg-opacity-10 flex justify-center items-center row-span-2 rounded-xl">
+            <img class="w-[116px] h-[178px]" src="./images/fresh-1.png" alt="">
+          </div>
+          <div class="p-6 bg-[#577639] bg-opacity-10 flex justify-center items-center row-span-2 rounded-xl">
+            <img class="w-[116px] h-[178px]" src="./images/fresh-2.png" alt="">
+          </div>
+          <div class="bg-gradient-to-r from-[#D9D9D9] to-[#FFFFFF] rounded-xl"></div>
+        </div>
+
+        <div>
+          <h1 class="text-4xl font-extrabold mb-4">Great Tea, Freshly<br>Presented</h1>
+          <p class="text-xs text-[#777777] font-medium mb-6">The meaning of gong cha is chanese is to provide the best tea to emperor<br>from all possessions . It represents the highest quality and self expectation.<br>Establishing in 2006, Gong cha had been deeply appreciated by its custoers<br>because of good words of mouth and unique customized service orginated<br>from Taiwan.</p>
+          <h6 class="font-extrabold mb-2">Unique Taste</h6>
+          <p class="text-xs text-[#777777] font-medium mb-4">A Unique and different style from other teapots gives a<br>luxurious and minimalist impression</p>
+          <h6 class="font-extrabold mb-2">Premium Quality</h6>
+          <p class="text-xs text-[#777777] font-medium">Premium Quality that makes tea more elegant and more<br>durable when you use it.</p>
+        </div>
+
+      </section>
+
     </main>
 
     <!-- Footer Section -->
-    <footer>
-
+    <footer class="bg-gradient-to-r from-[#FF0000] to-[#FF8938] bg-opacity-10">
+      <div></div>
+      <div>
+        <footer class="grid grid-cols-4 justify-self-center sm:footer-horizontal text-base-content px-12 py-24">
+          <nav class="flex flex-col space-y-3">
+            <h6 class="text-lg mb-3 font-bold">Quick Links</h6>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Insurance</a>
+            <a class="link link-hover">Privacy Policy</a>
+          </nav>
+          <nav class="flex flex-col space-y-3">
+            <h6 class="text-lg mb-3 font-bold">Our Service</h6>
+            <a class="link link-hover">Life Insurance</a>
+            <a class="link link-hover">Car Insurance</a>
+            <a class="link link-hover">Health Insurance</a>
+            <a class="link link-hover">House Insurance</a>
+          </nav>
+          <nav class="flex flex-col space-y-3">
+            <h6 class="text-lg mb-3 font-bold">Help</h6>
+            <a class="link link-hover">FAQs</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Cookie policy</a>
+          </nav>
+          <form>
+            <h6 class="text-lg font-bold mb-4">Subscribe to our<br>newsletter</h6>
+            <fieldset class="w-80">
+              <label>Enter your email address</label>
+              <div class="">
+                <input
+                  type="text"
+                  placeholder="username@site.com"
+                  class=" bg-transparent  border-b " />
+                <button class=""></button>
+              </div>
+            </fieldset>
+          </form>
+        </footer>
+      </div>
     </footer>
 
 </body>
